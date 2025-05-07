@@ -1,9 +1,9 @@
-#include "voodoo-av/infrastructure/plugin_interface.h"
-#include "voodoo-av/domain/logger.h"
+#include "voodoo/infrastructure/plugin_interface.h"
+#include "voodoo/domain/logger.h"
 #include <yara.h>
 #include "stdio.h"
 
-static const char* COMPILED_YARA_FILE = "/var/lib/voodoo_av/compiled_rules.yarac";
+static const char* COMPILED_YARA_FILE = "/var/lib/voodoo/compiled_rules.yarac";
 
 static YR_RULES* rules = NULL;
 

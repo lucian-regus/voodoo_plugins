@@ -1,8 +1,8 @@
-#include "voodoo-av/infrastructure/plugin_interface.h"
-#include "voodoo-av/infrastructure/context.h"
-#include "voodoo-av/domain/database.h"
-#include "voodoo-av/domain/logger.h"
-#include "voodoo-av/domain/mappers.h"
+#include "voodoo/infrastructure/plugin_interface.h"
+#include "voodoo/infrastructure/context.h"
+#include "voodoo/domain/database.h"
+#include "voodoo/domain/logger.h"
+#include "voodoo/domain/mappers.h"
 #include "signature_scanner/helpers.h"
 
 #include "glib.h"
