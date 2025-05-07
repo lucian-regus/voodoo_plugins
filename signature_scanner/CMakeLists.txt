@@ -19,6 +19,7 @@ target_include_directories(signature_scanner PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${PostgreSQL_INCLUDE_DIRS}
         ${GLIB_INCLUDE_DIRS}
+        /usr/local/include/voodoo
 )
 
 target_link_libraries(signature_scanner PRIVATE
