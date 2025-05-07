@@ -17,9 +17,6 @@ set_target_properties(signature_scanner PROPERTIES
 
 target_include_directories(signature_scanner PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
-        /usr/local/include/voodoo-av
-        /usr/local/include/voodoo-av/infrastructure
-        /usr/local/include/voodoo-av/domain
         ${PostgreSQL_INCLUDE_DIRS}
         ${GLIB_INCLUDE_DIRS}
 )
