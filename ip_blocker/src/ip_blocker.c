@@ -17,18 +17,17 @@ static int run_command(const char* cmd) {
 
 static int plugin_init(void) {
     if (system("sudo /usr/sbin/nft flush ruleset") != 0) {
-        log_message(LOG_LEVEL_ERROR, "[ip_blocker] Failed to flush nftables ruleset\n");
+        log_message(LOG_LEVEL_ERROR, "Failed to flush nftables ruleset\n");
         return -1;
     }
 
     char command[512];
     snprintf(command, sizeof(command), "sudo /usr/sbin/nft -f %s", NFT_FILE_PATH);
     if (system(command) != 0) {
-        log_message(LOG_LEVEL_ERROR, "[ip_blocker] Failed to load nftables ruleset from file\n");
+        log_message(LOG_LEVEL_ERROR, "Failed to load nftables ruleset from file\n");
         return -1;
     }
 
-    log_message(LOG_LEVEL_INFO, "[ip_blocker] NFT Ruleset updated\n");
     return 0;
 }
 
